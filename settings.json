@@ -8,7 +8,7 @@
   "[json]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
   "[jsonc]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
   "[jsonl]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
-  "[php]": {"editor.defaultFormatter": "shufo.vscode-blade-formatter"},
+  "[php]": {"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"},
   "[scss]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
   "[typescript]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
   "[typescriptreact]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
@@ -40,6 +40,8 @@
   "chat.tools.riskAssessment.enabled": false,
   "chat.tools.terminal.enableAutoApprove": false,
   "chat.viewSessions.enabled": false,
+  // Diff Editor
+  "diffEditor.hideUnchangedRegions.enabled": true,
   // Editor
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
@@ -73,6 +75,7 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "blink",
   "editor.cursorSmoothCaretAnimation": "off",
+  "editor.cursorStyle": "line",
   "editor.cursorSurroundingLines": 8,
   "editor.cursorWidth": 2,
   "editor.defaultColorDecorators": "never",
@@ -98,7 +101,7 @@
   "editor.foldingStrategy": "indentation",
   "editor.fontFamily": "Consolas, 'Courier New', monospace",
   "editor.fontLigatures": false,
-  "editor.fontSize": 13,
+  "editor.fontSize": 12.5,
   "editor.fontVariations": false,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
@@ -108,6 +111,7 @@
   "editor.guides.highlightActiveBracketPair": false,
   "editor.guides.highlightActiveIndentation": false,
   "editor.guides.indentation": false,
+  "editor.hideCursorInOverviewRuler": true,
   "editor.hover.delay": 800,
   "editor.hover.enabled": "off",
   "editor.inlayHints.enabled": "off",
@@ -122,7 +126,7 @@
   "editor.insertSpaces": false,
   "editor.letterSpacing": 0,
   "editor.lightbulb.enabled": "off",
-  "editor.lineHeight": 1.33,
+  "editor.lineHeight": 1.45,
   "editor.linkedEditing": true,
   "editor.links": false,
   "editor.matchBrackets": "never",
@@ -138,15 +142,10 @@
   "editor.parameterHints.enabled": false,
   "editor.pasteAs.enabled": false,
   "editor.peekWidgetDefaultFocus": "editor",
-  "editor.quickSuggestions": {
-    "comments": false,
-    "other": false,
-    "strings": false
-  },
   "editor.rename.enablePreview": false,
   "editor.renderControlCharacters": false,
   "editor.renderLineHighlight": "none",
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "none",
   "editor.roundedSelection": false,
   "editor.rulers": [80],
   "editor.screenReaderAnnounceInlineSuggestion": false,
@@ -173,7 +172,7 @@
   "editor.suggest.showMethods": true,
   "editor.suggest.showStatusBar": false,
   "editor.suggestSelection": "first",
-  "editor.tabCompletion": "off", // était "on" : même logique que quickSuggestions, aucune complétion sans que tu l'aies explicitement demandée
+  "editor.tabCompletion": "off",
   "editor.tabSize": 4,
   "editor.unicodeHighlight.allowedLocales": {"_os": false, "_vscode": false},
   "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -214,13 +213,16 @@
     "tsconfig.json": "tsconfig.*.json"
   },
   "explorer.sortOrder": "type",
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": "off",
+  "extensions.ignoreRecommendations": true,
+  // Files
   "files.associations": {
     ".php_cs": "php",
     ".php_cs.dist": "php",
     ".pre": "php",
     "artisan": "php"
   },
-  // Files
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.git": true,
@@ -232,7 +234,17 @@
     "**/Thumbs.db": true,
     "**/vendor": true
   },
+  "files.hotExit": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/build/**": true,
+    "**/dist/**": true,
+    "**/node_modules/**": true,
+    "**/vendor/**": true
+  },
   // Git
   "git.autofetch": false,
   "git.autorefresh": false,
@@ -252,6 +264,7 @@
   "js/ts.experimental.useTsgo": true,
   "js/ts.tsserver.automaticTypeAcquisition.enabled": false,
   "js/ts.tsserver.experimental.enableProjectDiagnostics": false,
+  "js/ts.tsserver.watchOptions": {"watchFile": "useFsEventsOnParentDirectory"},
   "js/ts.updateImportsOnFileMove.enabled": "always",
   // NPM
   "npm.autoDetect": "off",
@@ -274,6 +287,7 @@
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "none",
+  "remote.SSH.remotePlatform": {"dep-pa-devint": "linux"},
   // Search
   "search.exclude": {
     "_ide_helper_models.php": true,
@@ -289,6 +303,8 @@
     "**/.vscode": true,
     "**/*.code-search": true,
     "**/bower_components": true,
+    "**/build": true,
+    "**/dist": true,
     "**/node_modules": true,
     "**/Thumbs.db": true,
     "**/vendor": true
@@ -296,6 +312,8 @@
   "search.followSymlinks": false,
   "search.useGlobalIgnoreFiles": true,
   "search.useIgnoreFiles": true,
+  "security.workspace.trust.enabled": true,
+  "task.autoDetect": "off",
   // Telemetry
   "telemetry.editStats.enabled": false,
   "telemetry.feedback.enabled": false,
@@ -306,6 +324,7 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorStyleInactive": "line",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.gpuAcceleration": "on",
@@ -348,7 +367,8 @@
     "sideBarStickyScroll.shadow": "#00000000",
     "widget.shadow": "#00000000"
   },
-  "workbench.colorTheme": "Dark Modern",
+  "workbench.colorTheme": "Ambiance [beta]",
+  "workbench.commandPalette.experimental.suggestCommands": false,
   "workbench.commandPalette.history": 0,
   "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.customLabels.enabled": false,
@@ -370,9 +390,10 @@
   "workbench.editor.showTabs": "none",
   "workbench.editor.useModal": "off",
   "workbench.enableExperiments": false,
-  "workbench.iconTheme": "",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": false,
+  "workbench.localHistory.enabled": false,
   "workbench.navigationControl.enabled": false,
   "workbench.notifications.showInTitleBar": false,
   "workbench.reduceMotion": "on",
@@ -389,5 +410,6 @@
   "workbench.tree.indent": 20,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.welcomePage.experimentalOnboarding": false,
-  "workbench.welcomePage.walkthroughs.openOnInstall": false
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "zenMode.hideLineNumbers": false
 }
