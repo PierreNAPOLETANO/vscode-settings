@@ -59,6 +59,8 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.addMissingImports.ts": "always",
+    "source.fixAll.eslint": "always",
+    "source.fixAll.prettier": "always",
     "source.fixAll.ts": "always",
     "source.organizeImports": "always",
     "source.removeUnused.ts": "always",
@@ -97,9 +99,9 @@
   "editor.foldingHighlight": false,
   "editor.foldingMaximumRegions": 10,
   "editor.foldingStrategy": "indentation",
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "Space Mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 13.5,
   "editor.fontVariations": false,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
@@ -141,6 +143,7 @@
   "editor.parameterHints.enabled": false,
   "editor.pasteAs.enabled": false,
   "editor.peekWidgetDefaultFocus": "editor",
+  "editor.quickSuggestionsDelay": 100,
   "editor.rename.enablePreview": false,
   "editor.renderControlCharacters": false,
   "editor.renderLineHighlight": "none",
@@ -165,6 +168,7 @@
   "editor.snippetSuggestions": "none",
   "editor.stickyScroll.enabled": false,
   "editor.suggest.insertMode": "replace",
+  "editor.suggest.preview": true,
   "editor.suggest.showConstructors": true,
   "editor.suggest.showDeprecated": false,
   "editor.suggest.showFunctions": true,
@@ -224,6 +228,8 @@
     "artisan": "php"
   },
   "files.autoSave": "off",
+  "files.encoding": "utf8",
+  "files.eol": "\n",
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.git": true,
@@ -246,6 +252,7 @@
     "**/node_modules/**": true,
     "**/vendor/**": true
   },
+  "git.allowForcePush": false,
   "git.autofetch": true,
   // Git
   "git.autorefresh": false,
@@ -258,6 +265,9 @@
   "git.decorations.enabled": false,
   "git.enabled": false,
   "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
+  "git.postCommitCommand": "none",
+  "git.suggestSmartCommit": false,
   // Image Carousel
   "imageCarousel.chat.enabled": false,
   "imageCarousel.explorerContextMenu.enabled": false,
@@ -312,17 +322,25 @@
   "search.followSymlinks": false,
   "search.useGlobalIgnoreFiles": true,
   "search.useIgnoreFiles": true,
+  // Security
+  "security.workspace.trust.enabled": true,
+  "security.workspace.trust.startupPrompt": "always",
+  "security.workspace.trust.untrustedFiles": "prompt",
   // Task
+  "task.allowAutomaticTasks": "off",
   "task.autoDetect": "off",
   // Telemetry
   "telemetry.editStats.enabled": false,
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
   // Terminal
+  "terminal.integrated.confirmOnExit": "hasChildProcesses",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": false,
   "terminal.integrated.cursorStyle": "block",
   "terminal.integrated.cursorStyleInactive": "line",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
@@ -345,7 +363,6 @@
   "window.confirmSaveUntitledWorkspace": false,
   "window.controlsStyle": "native",
   "window.customMenuBarAltFocus": false,
-  "window.customTitleBarVisibility": "never",
   "window.dialogStyle": "native",
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
@@ -369,7 +386,7 @@
     "sideBarStickyScroll.shadow": "#00000000",
     "widget.shadow": "#00000000"
   },
-  "workbench.colorTheme": "Tokyo Night",
+  "workbench.colorTheme": "Dark Modern",
   "workbench.commandPalette.experimental.suggestCommands": false,
   "workbench.commandPalette.history": 0,
   "workbench.editor.closeEmptyGroups": false,
@@ -390,12 +407,15 @@
   "workbench.editor.restoreEditors": false,
   "workbench.editor.restoreViewState": false,
   "workbench.editor.showTabs": "none",
+  "workbench.editor.tabSizing": "shrink",
   "workbench.editor.useModal": "off",
   "workbench.enableExperiments": false,
   "workbench.iconTheme": "vscode-great-icons",
   "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": false,
   "workbench.localHistory.enabled": false,
+  "workbench.localHistory.maxFileEntries": 100,
+  "workbench.localHistory.maxFileSize": 512,
   "workbench.navigationControl.enabled": false,
   "workbench.notifications.showInTitleBar": false,
   "workbench.reduceMotion": "on",
@@ -412,6 +432,5 @@
   "workbench.tree.indent": 20,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.welcomePage.experimentalOnboarding": false,
-  "workbench.welcomePage.walkthroughs.openOnInstall": false,
-  "zenMode.hideLineNumbers": false
+  "workbench.welcomePage.walkthroughs.openOnInstall": false
 }
