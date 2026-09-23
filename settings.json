@@ -367,7 +367,7 @@
     "search.useGlobalIgnoreFiles": true,
     // Security
     "security.workspace.trust.startupPrompt": "always",
-    "security.workspace.trust.untrustedFiles": "prompt",
+    "security.workspace.trust.untrustedFiles": "open",
     // Task
     "task.allowAutomaticTasks": "off",
     "task.autoDetect": "off",
