@@ -130,7 +130,7 @@
     "editor.foldingHighlight": false,
     "editor.foldingMaximumRegions": 10,
     "editor.foldingStrategy": "indentation",
-    "editor.fontFamily": "Space Mono",
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.fontLigatures": false,
     "editor.fontSize": 13.5,
     "editor.fontVariations": false,
@@ -174,8 +174,8 @@
     "editor.peekWidgetDefaultFocus": "editor",
     "editor.quickSuggestions": {
         "comments": "off",
-        "strings": "off",
-        "other": "off"
+        "other": "off",
+        "strings": "off"
     },
     "editor.quickSuggestionsDelay": 100,
     "editor.rename.enablePreview": false,
