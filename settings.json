@@ -1,92 +1,24 @@
 {
 	// Formatters
-	"[blade]": {
-		"editor.defaultFormatter": "shufo.vscode-blade-formatter"
-	},
-	"[css]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[jsonl]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[php]": {
-		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-	},
-	"[scss]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"breadcrumbs.enabled": false,
+	"[blade]": { "editor.defaultFormatter": "shufo.vscode-blade-formatter" },
+	"[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+	"[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+	"[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+	"[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+	"[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+	"[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+	"[jsonl]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+	"[php]": { "editor.defaultFormatter": "bmewburn.vscode-intelephense-client" },
+	"[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+	"[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+	"[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 	// Breadcrumbs
+	"breadcrumbs.enabled": false,
 	// Chat
-	"chat.agent.codeBlockProgress": false,
-	"chat.agent.collapseCompletedResponses": false,
-	"chat.agent.enabled": false,
-	"chat.agentHost.byokModels.enabled": false,
-	"chat.agentHost.claudeAgent.enabled": false,
-	"chat.agentHost.codexAgent.enabled": false,
-	"chat.agentHost.copilot.toolSearch.enabled": false,
-	"chat.agentHost.githubMcpServer.enabled": false,
-	"chat.agentHost.systemProxy.enabled": false,
-	"chat.agentsControl.enabled": "hidden",
-	"chat.artifactTools.enabled": false,
-	"chat.checkpoints.enabled": false,
-	"chat.contextUsage.enabled": false,
-	"chat.copilot.hydraFusion.enabled": false,
-	"chat.copilot.tgrep.enabled": false,
-	"chat.customizations.migration.enabled": false,
-	"chat.customizations.promptMigration.enabled": false,
-	"chat.detectParticipant.enabled": false,
 	"chat.disableAIFeatures": true,
-	"chat.editor.localAgent.enabled": false,
-	"chat.editor.wordWrap": "on",
-	"chat.experimental.stickyScroll.enabled": false,
-	"chat.extensionTools.enabled": false,
-	"chat.extensionUnification.enabled": false,
-	"chat.harnessSwitchFeedbackSurvey.enabled": false,
-	"chat.implicitContext.enabled": {
-		"panel": "never"
-	},
-	"chat.math.enabled": false,
-	"chat.mcp.apps.enabled": false,
-	"chat.mcp.workspaceRootConfig.enabled": false,
-	"chat.microsoftAuthentication.enabled": "never",
-	"chat.plugins.enabled": false,
-	"chat.progressBorder.enabled": false,
-	"chat.remoteAgentHostsEnabled": false,
-	"chat.stickyScroll.enabled": false,
-	"chat.tips.enabled": false,
-	"chat.titleBar.openInAgentsWindow.enabled": false,
-	"chat.titleBar.signIn.enabled": false,
-	"chat.tools.confirmationCarousel.enabled": false,
-	"chat.tools.riskAssessment.enabled": false,
-	"chat.tools.terminal.blockDetectedFileWrites": "never",
-	"chat.tools.terminal.enableAutoApprove": false,
-	"chat.viewSessions.enabled": false,
-	"chat.welcomePage.signIn.enabled": false,
+	// Diff Editor
 	"diffEditor.ignoreTrimWhitespace": false,
 	"diffEditor.renderSideBySide": false,
-	// Diff Editor
 	"diffEditor.wordWrap": "on",
 	// Editor
 	"editor.acceptSuggestionOnCommitCharacter": false,
@@ -164,7 +96,6 @@
 	"editor.guides.highlightActiveIndentation": false,
 	"editor.guides.indentation": false,
 	"editor.hideCursorInOverviewRuler": true,
-	"editor.hover.delay": 1500,
 	"editor.hover.enabled": "off",
 	"editor.hover.sticky": false,
 	"editor.inlayHints.enabled": "off",
@@ -174,7 +105,6 @@
 	"editor.insertSpaces": false,
 	"editor.lightbulb.enabled": "off",
 	"editor.lineHeight": 1.3,
-	"editor.lineNumbers": "off",
 	"editor.linkedEditing": true,
 	"editor.matchBrackets": "never",
 	"editor.maxTokenizationLineLength": 1000,
@@ -218,8 +148,6 @@
 	"editor.suggest.insertMode": "replace",
 	"editor.suggest.showIcons": false,
 	"editor.suggest.showSnippets": false,
-	"editor.suggestFontSize": 13,
-	"editor.suggestLineHeight": 24,
 	"editor.suggestOnTriggerCharacters": false,
 	"editor.suggestSelection": "first",
 	"editor.tabSize": 4,
@@ -228,26 +156,18 @@
 			{
 				"scope": [
 					"comment",
-					"keyword",
-					"variable.language",
-					"entity.other.attribute-name.html",
 					"entity.other.attribute-name",
+					"entity.other.attribute-name.html",
+					"keyword",
 					"keyword.control",
 					"storage.type",
-					"comment",
-					"comment.block",
-					"comment.line"
+					"variable.language"
 				],
-				"settings": {
-					"fontStyle": ""
-				}
+				"settings": { "fontStyle": "" }
 			}
 		]
 	},
-	"editor.unicodeHighlight.allowedLocales": {
-		"_os": false,
-		"_vscode": false
-	},
+	"editor.unicodeHighlight.allowedLocales": { "_os": false, "_vscode": false },
 	"editor.unicodeHighlight.ambiguousCharacters": false,
 	"editor.unicodeHighlight.includeComments": false,
 	"editor.unicodeHighlight.includeStrings": false,
@@ -290,9 +210,9 @@
 	},
 	"explorer.openEditors.visible": 1,
 	"explorer.sortOrder": "type",
+	// Extensions
 	"extensions.autoCheckUpdates": false,
 	"extensions.autoUpdate": "off",
-	// Extensions
 	"extensions.ignoreRecommendations": true,
 	// Files
 	"files.associations": {
@@ -332,21 +252,8 @@
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
-	"git.autofetch": false,
 	// Git
-	"git.autorefresh": false,
-	"git.autoRepositoryDetection": false,
-	"git.confirmCommittedDelete": false,
-	"git.confirmSync": true,
-	"git.countBadge": "off",
-	"git.decorations.enabled": false,
 	"git.enabled": false,
-	"git.enableSmartCommit": false,
-	"git.inputValidation": true,
-	"git.inputValidationLength": 72,
-	"git.inputValidationSubjectLength": 50,
-	"git.openRepositoryInParentFolders": "never",
-	"git.showPushSuccessNotification": false,
 	// Image Carousel
 	"imageCarousel.chat.enabled": false,
 	"imageCarousel.explorerContextMenu.enabled": false,
@@ -357,8 +264,8 @@
 	"json.schemaDownload.enable": false,
 	// Live Sass Compile
 	"liveSassCompile.settings.generateMap": false,
-	"npm.fetchOnlinePackageInfo": false,
 	// NPM
+	"npm.fetchOnlinePackageInfo": false,
 	// PHP Namespace Resolver
 	"phpNamespaceResolver.autoImportOnSave": true,
 	"phpNamespaceResolver.removeOnSave": true,
@@ -375,6 +282,7 @@
 	"prettier.semi": false,
 	"prettier.singleQuote": true,
 	"prettier.trailingComma": "none",
+	"prettier.useTabs": true,
 	// Problems
 	"problems.decorations.enabled": false,
 	// SCM
@@ -519,6 +427,7 @@
 	"workbench.tree.renderIndentGuides": "none",
 	"workbench.welcomePage.experimentalOnboarding": false,
 	"workbench.welcomePage.walkthroughs.openOnInstall": false,
+	// Zen Mode
 	"zenMode.centerLayout": false,
 	"zenMode.hideLineNumbers": false,
 	"zenMode.hideStatusBar": true,
